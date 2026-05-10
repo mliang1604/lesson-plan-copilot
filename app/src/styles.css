@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Tailwind v4 — import theme and utilities only (preflight omitted to avoid
+   resetting baseline styles Angular Material depends on). */
+@import "tailwindcss/theme" layer(theme);
+@import "tailwindcss/utilities" layer(utilities);
