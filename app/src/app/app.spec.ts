@@ -18,6 +18,7 @@ describe('App', () => {
     const fixture = TestBed.createComponent(App);
     await fixture.whenStable();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, lesson-plan-copilot');
+    // INTENTIONAL FAILURE: testing CI gating — revert before merging
+    expect(compiled.querySelector('h1')?.textContent).toContain('This string will never appear in the rendered h1');
   });
 });
